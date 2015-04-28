@@ -23,6 +23,7 @@ link.click(function(){
   link.text(addressText);
   link.contents().unwrap();
   $('.tooltip').hide();
+  ga('send', 'event', 'button', 'click', 'email');
 });
 
 //init tooltip
