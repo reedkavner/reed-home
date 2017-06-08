@@ -9,8 +9,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Reed Kavner</title>
-    <meta name="description" content="Hi. I'm Reed Kavner. I build products with personality that make people's lives easier or just a bit more fun.">
+    <title>Comey X Snuffy Walden</title>
+    <meta name="description" content="Watch James Comey's testimony with the West Wing theme song.">
     
     <link rel="icon" href="favicon.png">
 
@@ -20,6 +20,7 @@
       padding: 0;
       margin: 0;
       font-family: Helvetica, sans-serif;
+      overflow: hidden;
     }
 
     a{
@@ -38,7 +39,6 @@
       margin: 0;
       padding: 0;
       overflow: hidden;
-      z-index: 1;
     }
 
     #bar{
@@ -49,6 +49,8 @@
       background-color: #f0f0f0;
       padding: 15px;
       box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
     }
 
     #audio{
@@ -60,6 +62,10 @@
       cursor: pointer;
       float: right;
       margin-top: -6px;
+    }
+
+    #wwing{
+      display: none;
     }
 
     </style>
@@ -75,12 +81,12 @@
 
   <iframe id="yt" src="https://www.youtube.com/embed/yry9PV3DNfw?autoplay=1&modestbranding=1&showinfo=0&playsinline=1" frameborder="0" allowfullscreen></iframe>
 
-  <audio src="assets/wwing.mp3" autoplay="true" loop="true" volume="0.3"></audio>
+  <audio id="wwing" src="assets/wwing.mp3" autoplay="true" loop="true" volume="0.3" preload="auto"></audio>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
   <script type="text/javascript">
-    var a = $('audio');
+    var a = $('#wwing');
     var btn = $('#audio');
 
     a.on("play", function(){
