@@ -6,7 +6,7 @@ $(document).ready(function() {
   var msg = $("#email-text");
 
   envelope.bind("mouseover", function() {
-    msg.text("Click to reveal address. Unless you're a robot. No robots please.");
+    msg.text("Click if you're not a robot.");
   });
 
   envelope.bind("mouseout", function() {
@@ -16,7 +16,7 @@ $(document).ready(function() {
   $(".cheap-viagra-from-canada").bind("click",
     function() {
       $(".cheap-viagra-from-canada").unbind("mouseover").unbind("mouseout").unbind("click")
-      msg.html("r@" + "reed.me - <span class='copy-email' id='copy-text'>Copy it to your clipboard?</span>");
+      msg.html("My email is r@"+"reed.me - <span class='copy-email' id='copy-text'>Wanna copy it to your clipboard?</span>");
       $("footer").addClass('email');
     }
   )
@@ -40,7 +40,7 @@ $(document).ready(function() {
   });
 
   introClip.on('success', function(e) {
-    $('#intro-copied').text(", which is now copied to your clipboard!")
+    $('#intro-copied').text(", which has been copied to your clipboard.")
     $('.intro-email').removeClass("intro-email");
 
   });

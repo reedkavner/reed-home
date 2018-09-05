@@ -68,7 +68,7 @@ a,
 .copy-email,
 .intro-email
  {
-  background-image: linear-gradient( var(--link-color) 0%, var(--link-color) 100%);
+  background-image: linear-gradient( #80ABFF 0%, #80ABFF 100%);
   background-position-y: 1.05em;
   background-repeat: no-repeat;
   transition: all .08s linear;
@@ -82,7 +82,7 @@ a:hover,
 .intro-email:hover {
   cursor: pointer;
   background-position-y: 0em;
-  border-bottom: 0.1em solid var(--link-color);
+  border-bottom: 0.1em solid #80ABFF;
   color: white;
 }
 
@@ -172,17 +172,13 @@ a.social:hover {
 }
 
 
-.fa-envelope{
-
-}
-
 .fa-envelope:hover{
-  background: black;
+  background: #80ABFF;
 }
 
 #email-text{
   color: black;
-  font-size: .8em;
+  font-size: 1em;
   height: 1em;
   margin-top: .5em;
 }
