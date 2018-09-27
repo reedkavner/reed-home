@@ -5,205 +5,246 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 
 :root {
-  --link-color: #80ABFF;
+    --link-color: #80ABFF;
 }
 
 * {
-  margin: 0;
+    margin: 0;
 }
 
 html {
-  height: 100%;
+    height: 100%;
 }
 
 body {
-  color: #21242a;
-  font-size: 18px;
-  background: #fafcff;
-  font-family: 'Lato', sans-serif;
-  text-rendering: optimizeLegibility;
+    color: #21242a;
+    font-size: 18px;
+    background: #fafcff;
+    font-family: 'Lato', sans-serif;
+    text-rendering: optimizeLegibility;
 }
 
 body::before,
 body::after {
-  content: "";
-  width: 100%;
-  position: fixed;
-  height: 0em;
-  background: black;
+    content: "";
+    width: 100%;
+    position: fixed;
+    height: 0em;
+    background: black;
 }
 
 body::before {
-  top: 0;
+    top: 0;
 }
 
 body::after {
-  bottom: 0;
+    bottom: 0;
 }
 
 h1,
 h2,
 h3 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  color: #FF4030;
-  letter-spacing: -0.02em;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color: #FF4030;
+    letter-spacing: -0.02em;
 }
 
 h1 {
-  font-size: 2em;
+    font-size: 2em;
+}
+
+h1.subpage {
+    font-size: 1.8em;
+}
+
+h1>a,
+h1>a:hover,
+a.fancybox {
+    background: none;
+    color: #FF4030;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a.fancybox:hover {
+    border-bottom: none;
 }
 
 h2 {
-  font-size: 1.5em;
-  margin-bottom: 1em;
+    font-size: 1.5em;
+    margin-bottom: 1em;
 }
 
 p {
-  line-height: 1.6em;
-  margin: 1em 0em;
+    line-height: 1.6em;
+    margin: 1em 0em;
 }
+
+.subpage-title {
+    color: #555d6c;
+}
+
+
 
 a,
 .copy-email,
-.intro-email
- {
-  background-image: linear-gradient( #80ABFF 0%, #80ABFF 100%);
-  background-position-y: 1.05em;
-  background-repeat: no-repeat;
-  transition: all .08s linear;
-  color: inherit;
-  text-decoration: none;
-  cursor: pointer;
+.intro-email {
+    background-image: linear-gradient( #80ABFF 0%, #80ABFF 100%);
+    background-position-y: 1.05em;
+    background-repeat: no-repeat;
+    transition: all .08s linear;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 a:hover,
 .copy-email:hover,
 .intro-email:hover {
-  cursor: pointer;
-  background-position-y: 0em;
-  border-bottom: 0.1em solid #80ABFF;
-  color: white;
+    cursor: pointer;
+    background-position-y: 0em;
+    border-bottom: 0.1em solid #80ABFF;
+    color: white;
 }
 
 
 #main {
-  max-width: 36em;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 5vw;
-  padding: 1em 1em;
+    max-width: 36em;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5vw;
+    padding: 1em 1em;
+}
+
+.content-page #main {
+    margin-top: 0;
 }
 
 section {
-  margin-bottom: 2.5em;
+    margin-bottom: 2.5em;
 }
 
 h1#name {
-  margin-top: 0;
-  font-size: 2.5em;
+    margin-top: 0;
+    font-size: 2.5em;
 }
 
 
 a.project-name {
-  font-weight: 900;
+    font-weight: 900;
 }
 
 p.project-description {
-  margin-top: .25em;
-  margin-bottom: 1.5em;
+    margin-top: .25em;
+    margin-bottom: 1.5em;
 }
 
 
 footer {
-  padding-top: 1em;
-  padding-bottom: 2em;
-  text-align: center;
+    padding-top: 1em;
+    padding-bottom: 2em;
+    text-align: center;
 }
 
 a.social,
 .instagram-gradient {
-  width: 28px;
-  height: 28px;
-  line-height: 28px;
-  font-size: 22px;
-  text-align: center;
-  vertical-align: middle;
-  margin-right: 8px;
-  transition: all .2s ease-in;
-  color: black;
-  text-decoration: none;
-  border-radius: 4px;
-  display: inline-block;
-  position: relative;
-  background-image: none;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 22px;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 8px;
+    transition: all .2s ease-in;
+    color: black;
+    text-decoration: none;
+    border-radius: 4px;
+    display: inline-block;
+    position: relative;
+    background-image: none;
 }
 
 a.social:hover {
-  color: white;
-  border-bottom: none;
+    color: white;
+    border-bottom: none;
 }
 
 .fa-facebook-f:hover {
-  background: #3B5998;
+    background: #3B5998;
 }
 
 .fa-twitter:hover {
-  background: #00aced;
+    background: #00aced;
 }
 
 .fa-instagram {
-  background: #fafcff;
+    background: #fafcff;
 }
 
 .instagram-gradient {
-  line-height: 0;
-  background: #d6249f;
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    line-height: 0;
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
 }
 
 .fa-instagram:hover {
-  background: none;
+    background: none;
 }
 
 .fa-github:hover {
-  color: white !important;
-  background: black;
+    color: white !important;
+    background: black;
 }
 
 
-.fa-envelope:hover{
-  background: #80ABFF;
+.fa-envelope:hover {
+    background: #80ABFF;
 }
 
-#email-text{
-  color: black;
-  font-size: 1em;
-  height: 1em;
-  margin-top: .5em;
+#email-text {
+    color: black;
+    font-size: 1em;
+    height: 1em;
+    margin-top: .5em;
+}
+
+
+/* Photography page ----------- */
+
+.photos {
+    line-height: 1.3em;
+    column-count: 2;
+    column-gap: .3em;
+}
+
+.photos img {
+    width: 100% !important;
+    height: auto !important;
 }
 
 
 ::-moz-selection {
-  background: #FF4030;
-  text-shadow: none;
+    background: #FF4030;
+    text-shadow: none;
 }
 
 ::selection {
-  background: #FF4030;
-  text-shadow: none;
-  color: white;
+    background: #FF4030;
+    text-shadow: none;
+    color: white;
 }
+
 
 
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen and  (max-device-width : 480px) {
-body{
-  font-size: 16px;
-}
 
-#main {
-  margin-top: 0;
-  }
-}
+@media only screen and (max-device-width: 480px) {
+    body {
+        font-size: 16px;
+    }
 
+    #main {
+        margin-top: 0;
+    }
+}

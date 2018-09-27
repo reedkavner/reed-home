@@ -40,7 +40,7 @@ $(document).ready(function() {
   });
 
   introClip.on('success', function(e) {
-    $('#intro-copied').text(", which has been copied to your clipboard.")
+    $('#intro-copied').text(", which has been copied to your clipboard")
     $('.intro-email').removeClass("intro-email");
 
   });
